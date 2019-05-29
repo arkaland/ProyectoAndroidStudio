@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">ListaCompras</string>
-    <string name="add_button_text">Agregar</string>
-    <string name="item_editText_hint">Agregar nuevo item</string>
-    <string name="action_settings">Opciones</string>
-</resources>

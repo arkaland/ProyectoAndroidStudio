@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ProyectoMovil</string>
+    <string name="Descansando">Procesando</string>
+    <string name="item_editText_hint">Agrega un producto</string>
+    <string name="add_button_text">Agrega producto</string>
+    <string name="appbar_scrolling_view_behavior">appbar</string>
+    <string name="tu_lista_temporal">TU LISTA TEMPORAL</string>
+    <string name="pide_info_supermercados">PIDE INFO SUPERMERCADOS</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Preferencias</string>
 </resources>
