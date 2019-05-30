@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 .setDefaultValues(this,
                         R.xml.preferences, false);
 
-        // Read the settings from the shared preferences, put them into the
-        // SettingsActivity, and display a toast.
+        // LEER SETTINGS DE SHARED PREFERENCES
+        // SettingsActivity, DISPLAY MENSAJE (FALSE)
         SharedPreferences sharedPref =
                 android.support.v7.preference.PreferenceManager
                         .getDefaultSharedPreferences(this);
