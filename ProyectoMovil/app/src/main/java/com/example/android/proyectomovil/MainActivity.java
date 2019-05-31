@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -63,19 +62,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //IMPLEMENTANDO SETTINGS
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NewWordActivity.class);
                 startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
-            /*
-                Snackbar.make(view, "Replace with your own action",
-                        Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                        */
+
             }
         });
         android.support.v7.preference.PreferenceManager
@@ -87,11 +81,13 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref =
                 android.support.v7.preference.PreferenceManager
                         .getDefaultSharedPreferences(this);
+
+
         Boolean switchPref = sharedPref.getBoolean
                 (SettingsActivity.KEY_PREF_EXAMPLE_SWITCH, false);
+
         Toast.makeText(this, switchPref.toString(),
                 Toast.LENGTH_SHORT).show();
-
 
 
         mTextView = findViewById(R.id.VerInfo);
@@ -121,9 +117,6 @@ public class MainActivity extends AppCompatActivity {
             mTextView.setText(savedInstanceState.getString(TEXT_STATE));
         }
 
-
-
-
     }
 
     public void IniciaTarea(View view) {
@@ -142,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
         // GRABAR INSTANCIA TEXTVIEW
         outState.putString(TEXT_STATE, mTextView.getText().toString());
     }
-
-
 
 //IMPLEMENTAR SETTINGS
     @Override

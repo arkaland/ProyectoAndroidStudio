@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 public class SettingsActivity extends AppCompatActivity {
 
     public static final String
-            KEY_PREF_EXAMPLE_SWITCH = "Prueba";
+            KEY_PREF_EXAMPLE_SWITCH = "example_switch";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
