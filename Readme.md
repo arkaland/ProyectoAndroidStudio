@@ -22,9 +22,7 @@ Tema 7: AsyncTask.<br/>
 Tema 9: Preferences, app settings.<br/>
 Tema 10:Room, entidades, DAO , etc (Completo).<br/>
 <br/>
-A mayores, m adapter class temporal.
-
-Solo me falta agregar un botón para limpiar la lista temporal y el slide para borrar elementos de la lista persistente. También sería ideal darle un pulido general, pero no he tenido más tiempo.
+A mayores, m adapter class temporal y más cosas como vista apaisada, botón de borrar lista, etc
 
 Al final la idea ha variado bastante desde el proyecto inicial, pero creo que ha sido para mejor.
 
