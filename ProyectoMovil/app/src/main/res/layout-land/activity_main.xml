@@ -12,8 +12,8 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
-        android:layout_width="228dp"
-        android:layout_height="282dp"
+        android:layout_width="229dp"
+        android:layout_height="283dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -25,9 +25,9 @@
         android:id="@+id/button"
         android:layout_width="147dp"
         android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
         android:onClick="IniciaTarea"
         android:text="@string/pide_info_supermercados"
         app:layout_constraintStart_toEndOf="@+id/include"
@@ -37,9 +37,10 @@
         android:id="@+id/VerInfo"
         android:layout_width="207dp"
         android:layout_height="146dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorTextHint"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/include"
@@ -67,7 +68,7 @@
         <ListView
             android:id="@+id/shopping_listView"
             android:layout_width="120dp"
-            android:layout_height="146dp"
+            android:layout_height="0dp"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -132,12 +133,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="228dp"
 
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_add_black_24dp"
-        app:layout_constraintStart_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="@+id/include"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -146,15 +147,25 @@
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/agrega_a_lista"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toEndOf="@+id/include"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/BorraLista"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:onClick="Dellist"
+        android:text="@string/borrar_lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/include" />
 
 </android.support.constraint.ConstraintLayout>

@@ -12,15 +12,14 @@
     <include
         android:id="@+id/include"
         layout="@layout/content_main"
-        android:layout_width="184dp"
-        android:layout_height="493dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="203dp"
+        android:layout_height="456dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/BorraLista"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fab" />
+        app:layout_constraintTop_toBottomOf="@+id/fab"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button"
@@ -34,9 +33,10 @@
 
     <TextView
         android:id="@+id/VerInfo"
-        android:layout_width="181dp"
-        android:layout_height="80dp"
+        android:layout_width="170dp"
+        android:layout_height="94dp"
         android:layout_marginTop="4dp"
+        android:background="@color/colorTextHint"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +44,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="167dp"
-        android:layout_height="227dp"
+        android:layout_width="157dp"
+        android:layout_height="230dp"
         android:layout_marginBottom="8dp"
 
         android:background="@color/cardview_shadow_start_color"
@@ -73,10 +73,8 @@
 
     <EditText
         android:id="@+id/item_editText"
-        android:layout_width="157dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="148dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
         android:autofillHints=""
@@ -91,13 +89,11 @@
         android:id="@+id/add_button"
         android:layout_width="165dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/add_button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="AGREGAR" />
+        tools:text="AGREGA RECADO" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -137,8 +133,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="167dp"
-        android:layout_height="46dp"
+        android:layout_width="165dp"
+        android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -149,10 +145,20 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/include"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.459" />
+
+    <Button
+        android:id="@+id/BorraLista"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="Dellist"
+        android:text="@string/borrar_lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

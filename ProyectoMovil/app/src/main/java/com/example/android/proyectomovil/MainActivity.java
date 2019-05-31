@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,9 +24,6 @@ import android.widget.Toast;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-    public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
-
 
     private static final String TEXT_STATE = "Texto actual";
     private WordViewModel mWordViewModel;
@@ -117,6 +115,33 @@ public class MainActivity extends AppCompatActivity {
             mTextView.setText(savedInstanceState.getString(TEXT_STATE));
         }
 
+
+        //IMPLANTACION DE SWIPE PARA BORRAR ARTICULOS
+        ItemTouchHelper helper = new ItemTouchHelper(
+                new ItemTouchHelper.SimpleCallback(0,
+                        ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+                    @Override
+                    public boolean onMove(RecyclerView recyclerView,
+                                          RecyclerView.ViewHolder viewHolder,
+                                          RecyclerView.ViewHolder target) {
+                        return false;
+                    }
+
+                    @Override
+                    public void onSwiped(RecyclerView.ViewHolder viewHolder,
+                                         int direction) {
+                        int position = viewHolder.getAdapterPosition();
+                        Word myWord = adapter.getWordAtPosition(position);
+                        Toast.makeText(MainActivity.this, "Deleting " +
+                                myWord.getWord(), Toast.LENGTH_LONG).show();
+
+                        // Delete the word
+                        mWordViewModel.deleteWord(myWord);
+                    }
+                });
+
+        helper.attachToRecyclerView(recyclerView);
+
     }
 
     public void IniciaTarea(View view) {
@@ -162,6 +187,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
+
     //PARTE DE IMPLANTACION PERSISTENT DB
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -177,5 +204,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void Dellist(View view) {
+        mWordViewModel.deleteAll();
+    }
 }
 

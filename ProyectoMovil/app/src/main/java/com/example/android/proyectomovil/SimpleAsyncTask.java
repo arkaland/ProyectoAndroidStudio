@@ -15,10 +15,10 @@ public class SimpleAsyncTask extends AsyncTask<Void, Void, String> {
 
     @Override
     protected String doInBackground(Void... voids) {
-        String info="DIA: Calle tesla, n22, cp66774\n" +
-                "GADIS: Calle rocha, n33, cp44232\n" +
-                "MERCADONA: Calle pi, n44, cp66678\n" +
-                "FROIZ: Rua nova, n67, cp88844;";
+        String info="DIA: Calle ron,n22, cp66774\n" +
+                "GADIS: Calle cola,n33, cp44232\n" +
+                "MERCADONA: Calle pi,n44, cp66678\n" +
+                "FROIZ: Rua nova,n67, cp88844;";
 
         // CODIGO TAREA ASYNCTASK
         //MODIFICAR POR VISUALIZACION DE INFORMACION DE SUPERMERCADO
