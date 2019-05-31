@@ -20,7 +20,7 @@ Tema 4: Menú e imagen clicable de fav.<br/>
 Tema 5: Drawable Imagen.<br/>
 Tema 7: AsyncTask.<br/>
 Tema 9: Preferences, app settings.<br/>
-Tema 10:Room, entidades, DAO , etc (Completo).<br/>
+Tema 10:Room, entidades, DAO ,DB persistente,borrado en slide, etc (Completo).<br/>
 <br/>
 A mayores, m adapter class temporal y más cosas como vista apaisada, botón de borrar lista, etc
 
