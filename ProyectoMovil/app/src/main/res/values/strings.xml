@@ -6,9 +6,7 @@
     <string name="appbar_scrolling_view_behavior">appbar</string>
     <string name="tu_lista_temporal">RECADOS</string>
     <string name="pide_info_supermercados">PIDE INFO SUPERMERCADOS</string>
-    <string name="title_activity_settings">SettingsActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="action_settings">Preferencias</string>
     <string name="agrega_a_lista">AGREGA A LISTA</string>
     <string name="hint_word">Palabra...</string>
