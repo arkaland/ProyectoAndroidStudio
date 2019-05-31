@@ -6,7 +6,7 @@ Toda la información se encuentra en el documento explicativo adjunto.
 
 <b>Nota sobre los commits:</b>
 
-El motivo por el que hay 2 commits agrupados 6 y 7 es el siguiente:
+El motivo por el que hay 2 commits agrupados (6 y 7 creo recordar) es el siguiente:
 
 ![](https://raw.githubusercontent.com/arkaland/ProyectoAndroidStudio/master/explicacioncommits.png)
 
@@ -20,7 +20,11 @@ Tema 4: Menú e imagen clicable de fav.<br/>
 Tema 5: Drawable Imagen.<br/>
 Tema 7: AsyncTask.<br/>
 Tema 9: Preferences, app settings.<br/>
-Tema 10:Room, entidades, DAO , etc (A medias).<br/>
+Tema 10:Room, entidades, DAO , etc (Completo).<br/>
 <br/>
-A mayores, adapter class.
+A mayores, m adapter class temporal.
+
+Solo me falta agregar un botón para limpiar la lista temporal y el slide para borrar elementos de la lista persistente. También sería ideal darle un pulido general, pero no he tenido más tiempo.
+
+Al final la idea ha variado bastante desde el proyecto inicial, pero creo que ha sido para mejor.
 
